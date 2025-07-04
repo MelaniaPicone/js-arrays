@@ -19,16 +19,14 @@ pushTeacher[4] = "Patrick";
 console.log(pushTeacher);
 
 // 3. Rimuovi l'ultimo insegnante dall'array e salvalo nella variabile lastTeacher qui sotto
-teachers.pop();
-console.log(teachers);
-const lastTeacher = `Luca`;
+const lastTeacher = teachers.pop();
 console.log(lastTeacher);
+console.log(teachers);
 
 // 4. Rimuovi il primo insegnante dall'array e salvalo nella variabile firstTeacher qui sotto
-teachers.shift();
-console.log(teachers);
-const firstTeacher = `Nathan`;
+const firstTeacher = teachers.shift();
 console.log(firstTeacher);
+console.log(teachers);
 
 // 5. Aggiungi un insegnante di nome 'Vanessa' alla fine dell'array teachers
 teachers.push(`Vanessa`);
@@ -40,10 +38,20 @@ console.log(teachers);
 
 // 7. Trova l'indice dell'insegnante 'Lewis' nell'array teachers
 // e salvalo nella variabile lewisIndex
-console.log(teachers[teachers.length -2])
-const lewisIndex = "Lewis";
+const lewisIndex = teachers.indexOf('Lewis');
 console.log(lewisIndex);
 
 // 8. Verifica se l'array teachers è vuoto
 // e salva il risultato nella variabile isTeachersEmpty
-const isTeachersEmpty = null;
+let result;
+if (teachers.length > 0)
+  {
+  result=false;
+  
+}
+else {
+  result=true;
+ 
+}
+const isTeachersEmpty = result;
+console.log(isTeachersEmpty);
